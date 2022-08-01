@@ -1,9 +1,9 @@
-// Desenvolva uma função que recebe como parâmetro um objeto e retorne um array de arrays, em que cada
-// elemento é um array formado pelos pares chave/valor que corresponde a um atributo do objeto. Observe os
-// exemplos abaixo para um melhor entendimento:
+// Faça uma função que recebe a base e a altura de um triângulo e retorne a área desse triângulo. A precisão
+// deverá ser de duas casas decimais, arredondando se necessário.
 
-function objetoParaArray(obj) {
-  return Object.entries(obj);
+function areaTriangulo(base, altura) {
+  const area = (base * altura) / 2;
+  return area.toFixed(2);
 }
 
-console.log(objetoParaArray({ nome: "Eliabe", idade: 26 }));
+console.log(areaTriangulo(10, 15));
