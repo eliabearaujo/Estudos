@@ -19,4 +19,4 @@ function qtletras2(caractereBuscado, frase) {
     .length;
 }
 
-console.log(qtletras2("a", "Eliabe Trajano de Araujo"));
+console.log(qtletras2("a", "Ana Carolina Vieira da Silva"));
