@@ -8,3 +8,12 @@ function segundoMaior(numeros) {
 }
 
 console.log(segundoMaior([12, 16, 1, 5]));
+
+function segundoMaior2(numeros) {
+  const maiorNumero = Math.max(...numeros);
+  numeros = numeros.filter((numero) => numero != maiorNumero);
+  const segundoMaior = Math.max(...numeros);
+  return segundoMaior;
+}
+
+console.log(segundoMaior2([12, 16, 1, 5]));
