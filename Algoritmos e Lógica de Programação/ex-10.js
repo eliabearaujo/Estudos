@@ -10,6 +10,7 @@ function simboloMais(quantidade) {
 }
 
 function simboloMais2(quantidade) {
+  //Array(quantidade), cria um array com o tamanho informado. Fill("+"), preenche o array com o conteudo informado. Join(""), converte o array em uma string, separando pelo elemento informado dentro do método.
   return Array(quantidade).fill("+").join("");
 }
 

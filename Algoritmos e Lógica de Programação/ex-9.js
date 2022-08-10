@@ -12,6 +12,7 @@ function repetir(e, quantidade) {
 console.log(repetir("Eliabe", 3));
 
 function repetir2(e, quantidade) {
+  //O método Array(quantidade), cria um array com o tamanho informado. O método fill por sua vez, preenche o array com o elemento informado.
   return Array(quantidade).fill(e);
 }
 console.log(repetir2("Eliabe", 3));

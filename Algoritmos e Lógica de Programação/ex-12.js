@@ -8,6 +8,7 @@
 // propriedade especificada no segundo parâmetro.
 
 function removerPropriedade(objeto, propriedade) {
+  //O método assign copia todas as propriedades e métodos de um objeto para outro.
   const novoObjeto = Object.assign({}, objeto);
   delete novoObjeto.propriedade;
   return novoObjeto;
