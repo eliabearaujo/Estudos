@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  background: #f7f7f7;
+  display: grid;
+  gap: 60px; /*gap aplicado entre os elementos filhos do body. */
+  margin-top: 60px;
+  justify-items: center;
+}
+.menu {
+  display: flex; /*Aplicado somente ao menu para permitir que o conteudo fique na mesma linha. */
+  gap: 20px; /*Espaçamento entre cada item/link. */
+  flex-wrap: wrap; /*Permitindo que caso o espaço diminua (tela diminua), os itens possam ir para a linha de baixo. */
+  justify-content: center;
+}
+.menu a {
+  background: white;
+  padding: 15px 30px;
+  border-radius: 4px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase; /*Transformando o texto que estava minusculo e maiusculo. */
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+p {
+  font-size: 20px;
+  line-height: 1.3;
+}
+.conteudo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1000px;
+}
+.introducao {
+  position: relative;
+  background: white;
+  padding: 40px;
+  text-align: right;
+  display: grid;
+  align-content: center;
+  gap: 20px;
+  justify-items: end;
+}
+.detalhe {
+  display: inline-block;
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background: #e21;
+  top: 30px;
+  right: -30px;
+}
+.botao {
+  background: #e21;
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.subtitulo {
+  font-size: 64px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: right;
+  padding: 40px;
+  align-self: center;
+}
+.vantagens {
+  background: #ffffff;
+  padding: 40px;
+}
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+}
+.vantagens-item p {
+  grid-column: 2;
+}
+footer {
+  background: white;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
