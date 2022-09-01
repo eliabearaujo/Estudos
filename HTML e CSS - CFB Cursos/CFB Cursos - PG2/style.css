@@ -1,0 +1,163 @@
+#menu{
+    float: left;
+    margin-top: 93px;
+    width: 453px;
+}
+#menu a:hover{
+    color: #000000; /*Aplica o feito de mudança de cor quando passamos o mouse sobre o link*/
+}
+#menu ul{
+    list-style: none; /*Permite modificar o marcador de uma lista.*/
+    background: linear-gradient(to bottom, #DDDDDD, #666666); /*Permite aplicar efeitos no fundo de uma div, nesse caso o efeito gradiente, sentido para baixo, e as cores em que o gradiente irá variar.*/
+    padding: 0px;
+    margin:0px 0px 0px 20px;
+}
+#menu li{
+    height: 57px; /*Alterando o tamanho da célula da tabela, NESSE CASO*/
+    display: table-cell; /*Alterando a disposição da tabela, tranformando as linhas em colunas.Configura o element para se “comportar” como se fosse uma célula de uma tabela, basicamente como se fosse um <td>.*/
+    text-align: center; /*Alterando horizontalmente a disposição do texto*/
+    vertical-align: middle; /*Alterando verticalmente a posição do texto*/
+    width: 150px; /*Alterando a largura da célula, NESSE CASO*/
+    border-right: 1px solid #062; /*Adicionando borda, somente a direita da célula.*/
+}
+#menu a{
+    text-decoration: none; /*Retira a formatação do link, remove o sublinhado padrão do link., NESTE CASO*/
+    font-size: 20px;
+    color: #FFFFFF;
+}
+body{
+    margin: 0 auto; /*Configuração de margens em zero de forma que o conteúdo ficará centralizado na janela.*/
+    width: 960px;
+    background-color: #DDD;
+    padding: 0px;
+    background: url(img/fundo.gif) repeat-x; /*Imagem de fundo configurada para repetir somente no eixo X.*/
+}
+#cab img{
+    float: left;
+}
+#social{
+    float: right;
+    margin-top: 40px;
+}
+#social img{
+    width: 32px; /*Largura dos ícones sociais*/
+    height: 32px; /*Altura dos ícones sociais*/
+}
+.fixfloat{
+    clear: both;
+}
+#lateral{
+    float: right; /*Flutuar a janela lateral e posicionar à direita*/
+    background: #DDDDDD; /*Cor de fundo da caixa lateral*/
+    width: 190px; /*Largura da caixa lateral*/
+    border-radius: 10px; /*Arredondamento das bordas da caixa lateral*/
+    padding: 5px; /*Borda interna da caixa lateral.*/
+}
+#lateral h1{
+    font-size: 15pt; /*Tamanho da fonte*/
+    text-align: center; /*Alinhamento do texto ao centro*/
+    border-bottom: 1px solid #000000; /*Borda de baixo do texto <h1>*/
+    margin-top: -5px; /*Margem superior do texto <h1>, note que o valor é “-5”*/
+}
+#lateral h2{
+    font-size: 15pt;
+}
+#lateral p{
+    text-align: justify;
+}
+#main{
+    background: #EEEEEE;
+    width: 730px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+#main h1{
+    font-size: 20pt;
+    border-bottom: 1px solid #000000;
+}
+#main h2{
+    font-size: 15pt;
+}
+#main p{
+    text-align: justify;
+}
+footer{
+    color: #888888;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+footer p{
+    display: inline-block;
+    width: 316px;
+    text-align: center;
+}
+#slider{ /*Formatação geral da <div id=“slider”>*/
+    width: 960px; /*Largura do slider*/
+    height: 384px; /*Altura do slider*/
+    margin-top: 15px; /*Margem superior para não ficar muito junto com o <header>*/
+    margin-bottom: 10px; /*Margem inferior para não ficar muito junto com os <section id="cxLateral"> e <section id="main">*/
+}
+#slider img{
+    width: 960px;
+    height: 384px;
+}
+#b1{
+    position: relative; /*Posicionamento relativo ao elemento anterior*/
+    left: 0px; /*Posição X em 0 em ralação à div anterior*/
+    top: 0px; /*Posição Y em 0 em ralação à div anterior*/
+}
+#b2{
+    position: relative; 
+    left: 0px; 
+    top: -388px; 
+}
+#b3{
+    position: relative;
+    left: 0px;
+    top: -776px;
+}
+#contato label{ /*Formatação dos elementos <label>*/
+    font-size: 15pt;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif; /*Tipo de fonte Arial*/
+    color: #777777;
+}
+#contato input{
+    font-size: 15pt;
+    color: #000000;
+}
+.botao{
+    border-radius: 20px;
+    font-weight: bold;
+    height: 40px;
+    width: 200px;
+    background-color: #669999;
+    cursor: pointer;
+    border: 0px;
+}
+
+details{
+    margin-top:30px;
+}
+summary{
+    height: 40px;
+    border-radius:10px;
+    padding: 15px 0px 0px 10px;
+    font: 15pt Arial;
+    font-weight:bold;
+    background: linear-gradient(to bottom, #EEE, #999);
+    list-style: none; /*https://justmarkup.com/articles/2020-09-22-styling-and-animation-details/*/
+}
+details p{
+    font-size: 20px;
+}
+summary:before{ /*Formatação do elemento “anterior” do <summary> (elemento que vai substituir a seta)*/
+    margin-right:5px;
+    content:"+";
+}
+details[open] summary:before { /*Formatação do elemento à direita (seta) quando estiver aberto*/
+    content: "-";
+}
