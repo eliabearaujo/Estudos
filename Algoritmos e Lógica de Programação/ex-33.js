@@ -6,4 +6,6 @@ recerberMelhorEstudante({
   Carla: [7, 7, 8, 9],
 });
 
-function recerberMelhorEstudante(estudante) {}
+function recerberMelhorEstudante(estudante) {
+  
+}
